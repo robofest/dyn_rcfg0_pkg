@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launch dynamic reconfigure -->
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_console" args="-t"/>
+
+    <!-- YOUR NODE HERE -->
+    <node pkg="dyn_rcfg0_pkg" type="dyn_rcfg0.py" name="dyn_rcfg0" output="screen"/>
+</launch>
